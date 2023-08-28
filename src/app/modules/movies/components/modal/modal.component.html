@@ -1,0 +1,35 @@
+<section class="modal-container" *ngIf="!hasError">
+  <ng-container>
+    <app-loader *ngIf="isLoading"></app-loader>
+  </ng-container>
+
+  <button class="close-modal" (click)="closeModal()">❌</button>
+  <h2>{{ data.title }}</h2>
+
+  <article class="movie-info">
+    <div class="movie-info__poster">
+      <img src="{{ movie.Poster }}" alt="{{ movie.Title }} poster" />
+    </div>
+
+    <div class="movie-details">
+      <p class="movie-details__plot">{{ movie.Plot }}</p>
+
+      <div class="other-infos">
+        <p><strong>Diretor:</strong> {{ movie.Director }}</p>
+        <p><strong>Escritor:</strong> {{ movie.Writer }}</p>
+        <p><strong>Ator:</strong> {{ movie.Actors }}</p>
+        <p><strong>País:</strong> {{ movie.Country }}</p>
+        <p><strong>Linguagem:</strong> {{ movie.Language }}</p>
+        <p><strong>Tempo de execução:</strong> {{ movie.Runtime }}</p>
+        <p><strong>Genero:</strong> {{ movie.Genre }}</p>
+        <p><strong>Lançamento:</strong> {{ movie.Released }}</p>
+        <p><strong>Prêmios:</strong> {{ movie.Awards }}</p>
+        <p>
+          <strong>Classificação IMDB:</strong>
+          {{ movie.imdbRating | starsRating }}
+          <strong>{{ movie.imdbRating }} </strong>
+        </p>
+      </div>
+    </div>
+  </article>
+</section>
