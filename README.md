@@ -1,8 +1,8 @@
-# 🎬 Angular Movie Listing
+# 🎬 Filmoteca com Angular
 
 - Listagem de filmes com filtro com Angular e OMDb API
 
-## 🕹️ Rodando a aplicação
+## 🕹 Rodando a aplicação
 
 - Para que seja possível rodar a aplicação, precisa ter o [NodeJS](https://nodejs.org/en/) instalado em sua máquina.
 
@@ -10,17 +10,13 @@
 
 `node -v`
 
-### 🔮 Instale as dependências
-
-- Utilizando yarn
-
-`yarn`
+Instale as dependências
 
 - Utilizando npm
 
 `npm install`
 
-## 🕹️ Rodando aplicação Angular
+## 🕹 Rodando aplicação Angular
 
 - Para rodar o Angular utilize o seguinte comando
 
